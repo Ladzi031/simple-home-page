@@ -1,13 +1,32 @@
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;*/
     flex-basis: auto;
+    justify-content: space-between;
+
+}
+header div {
+    flex-basis: 10%;
+}
+nav {
+    flex-basis: 70%;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+ul li {
+    list-style-type: none;
 }
 main {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
 }
 .additional-info {
     display: flex;
@@ -17,10 +36,15 @@ main {
 }
 #get-started-button {
     border: none;
-    padding: 4%;
+    padding: 1%;
     color: whitesmoke;
     background-color: rgb(5, 168, 5);
-    width: 28%;
-    height: 7%;
+    width: 24%;
     border-radius: 50px;
+    margin: 1%;
+}
+#button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
