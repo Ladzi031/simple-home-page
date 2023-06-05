@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#get-started-button {
+    border: none;
+    padding: 4%;
+    color: whitesmoke;
+    background-color: rgb(5, 168, 5);
+    width: 28%;
+    height: 7%;
+    border-radius: 50px;
+}
