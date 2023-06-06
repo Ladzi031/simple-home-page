@@ -1,51 +1,118 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 header {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap;*/
-    flex-basis: auto;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap;*/
+  flex-basis: auto;
+  justify-content: space-between;
+}
+#nav-bar-2 {
+    display: none;
 }
 header div {
-    flex-basis: 10%;
+  flex-basis: 10%;
+}
+header div button {
+  background-color: transparent;
+  border: 2px solid lightgreen;
+  border-radius: 50px;
+  width: 90%;
+  height: 45%;
+}
+header div button:hover {
+  opacity: 0.5;
+}
+header div {
+  padding: 4px;
+  align-content: center;
+}
+header div span {
+  background-color: rgb(152, 3, 3);
+  color: white;
+  border-radius: 45px;
+  padding: 5px;
 }
 nav {
-    flex-basis: 70%;
+  flex-basis: 70%;
 }
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-ul li {
-    list-style-type: none;
+ul li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 10px;
+}
+ul li a:hover {
+  border-bottom: 4px soid blue;
+  background-color: black;
+  color: whitesmoke;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ /* margin-top: 5%; */
+  height: 80vh;
 }
 .additional-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 #get-started-button {
-    border: none;
-    padding: 1%;
-    color: whitesmoke;
-    background-color: rgb(5, 168, 5);
-    width: 24%;
-    border-radius: 50px;
-    margin: 1%;
+  border: none;
+  padding: 1%;
+  color: whitesmoke;
+  background-color: rgb(5, 168, 5);
+  width: 24%;
+  border-radius: 50px;
+  margin: 1%;
+}
+#get-started-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 #button-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+@media (max-width: 450px) {
+    /* … */
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav {
+        display: none;
+    }
+    #nav-bar-2 {
+        display: block;
+    }
+    header div button {
+        background-color: transparent;
+        border: 2px solid lightgreen;
+        border-radius: 50px;
+        width: 35vh;
+        height: 4vh;
+      }
+      header div button:hover {
+        opacity: 0.5;
+      }
+  }
+  
